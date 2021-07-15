@@ -1,21 +1,30 @@
-import * as React from 'react'
+import React, {createRef, useEffect} from "react";
 
-export const useMyHook = () => {
-  let [{
-    counter
-  }, setState] = React.useState({
-    counter: 0
-  })
+export const useCopyToClipboard = (textToCopy, onSuccess, onError) => {
+  const clickRef = createRef()
 
-  React.useEffect(() => {
-    let interval = window.setInterval(() => {
-      counter++
-      setState({counter})
-    }, 1000)
-    return () => {
-      window.clearInterval(interval)
+  const copyHandler = () => {
+    if (!navigator.clipboard) {
+      return
     }
-  }, [])
 
-  return counter
+    navigator.clipboard.writeText(textToCopy)
+      .then(() => {
+        onSuccess && onSuccess()
+      })
+      .catch(() => {
+        onError && onError()
+      })
+  }
+
+  useEffect(() => {
+    if (clickRef.current) {
+      clickRef.current.addEventListener('click', copyHandler)
+    }
+    return () => {
+      clickRef.current?.removeEventListener('click', copyHandler)
+    }
+  }, [clickRef])
+
+  return clickRef
 }
