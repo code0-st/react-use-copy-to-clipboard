@@ -12,16 +12,15 @@ npm install --save react-use-copy-to-clipboard
 
 ```jsx
 import React from "react";
-import {useCopyToClipboard} from "useCopyToClipboard";
+import {useCopyToClipboard} from "react-use-copy-to-clipboard";
 
 export const CopyButton = ({text}) => {
-    const clickRef = useCopyToClipboard(text,
-        () => console.log("Copyed!"),
-        () => console.log("Unable to copy!"),
-    )
-    return (
-        <button ref={clickRef}><button/>
-    )
+  const clickRef = useCopyToClipboard(text,
+    () => console.log("Copyed!"),
+    () => console.log("Unable to copy!"))
+  return (
+    <button ref={clickRef}>Copy!</button>
+  )
 }
 ```
 
@@ -30,3 +29,5 @@ export const CopyButton = ({text}) => {
 MIT © [code0-st](https://github.com/code0-st)
 
 ---
+
+This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).
