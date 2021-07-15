@@ -1,7 +1,5 @@
 # react-use-copy-to-clipboard
 
-> this hook is needed to copy text to the clipboard when clicking on any element
-
 [![NPM](https://img.shields.io/npm/v/react-use-copy-to-clipboard.svg)](https://www.npmjs.com/package/react-use-copy-to-clipboard) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
@@ -13,15 +11,17 @@ npm install --save react-use-copy-to-clipboard
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from "react";
+import {useCopyToClipboard} from "hooks/useCopyToClipboard";
 
-import { useMyHook } from 'react-use-copy-to-clipboard'
-
-const Example = () => {
-  const example = useMyHook()
-  return (
-    <div>{example}</div>
-  )
+export const CopyButton = ({text}) => {
+    const clickRef = useCopyToClipboard(text,
+        () => console.log("Copyed!"),
+        () => console.log("Unable to copy!"),
+    )
+    return (
+        <button ref={clickRef}><button/>
+    )
 }
 ```
 
@@ -30,5 +30,3 @@ const Example = () => {
 MIT © [code0-st](https://github.com/code0-st)
 
 ---
-
-This hook is created using [create-react-hook](https://github.com/hermanya/create-react-hook).

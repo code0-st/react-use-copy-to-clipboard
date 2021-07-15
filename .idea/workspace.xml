@@ -11,15 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b96346c-3391-4ee3-ae7c-8e604973246d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/example/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +35,23 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="prepare" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prepare" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.prepare" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,7 +63,7 @@
       <workItem from="1626387921304" duration="169000" />
       <workItem from="1626388123444" duration="20000" />
       <workItem from="1626388494389" duration="52000" />
-      <workItem from="1626388548690" duration="598000" />
+      <workItem from="1626388548690" duration="970000" />
     </task>
     <servers />
   </component>
@@ -73,9 +83,25 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="687" y="258" key="FileChooserDialogImpl" timestamp="1626388587596">
+    <state x="687" y="258" key="FileChooserDialogImpl" timestamp="1626389285002">
       <screen x="0" y="46" width="1920" height="1034" />
     </state>
-    <state x="687" y="258" key="FileChooserDialogImpl/0.46.1920.1034/1920.40.1920.1040@0.46.1920.1034" timestamp="1626388587596" />
+    <state x="687" y="258" key="FileChooserDialogImpl/0.46.1920.1034/1920.40.1920.1040@0.46.1920.1034" timestamp="1626389285002" />
+    <state width="1893" height="263" key="GridCell.Tab.0.bottom" timestamp="1626389264159">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1893" height="263" key="GridCell.Tab.0.bottom/0.46.1920.1034/1920.40.1920.1040@0.46.1920.1034" timestamp="1626389264159" />
+    <state width="1893" height="263" key="GridCell.Tab.0.center" timestamp="1626389264159">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1893" height="263" key="GridCell.Tab.0.center/0.46.1920.1034/1920.40.1920.1040@0.46.1920.1034" timestamp="1626389264159" />
+    <state width="1893" height="263" key="GridCell.Tab.0.left" timestamp="1626389264159">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1893" height="263" key="GridCell.Tab.0.left/0.46.1920.1034/1920.40.1920.1040@0.46.1920.1034" timestamp="1626389264159" />
+    <state width="1893" height="263" key="GridCell.Tab.0.right" timestamp="1626389264159">
+      <screen x="0" y="46" width="1920" height="1034" />
+    </state>
+    <state width="1893" height="263" key="GridCell.Tab.0.right/0.46.1920.1034/1920.40.1920.1040@0.46.1920.1034" timestamp="1626389264159" />
   </component>
 </project>
