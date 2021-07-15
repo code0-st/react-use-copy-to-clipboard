@@ -12,7 +12,7 @@ npm install --save react-use-copy-to-clipboard
 
 ```jsx
 import React from "react";
-import {useCopyToClipboard} from "hooks/useCopyToClipboard";
+import {useCopyToClipboard} from "useCopyToClipboard";
 
 export const CopyButton = ({text}) => {
     const clickRef = useCopyToClipboard(text,
